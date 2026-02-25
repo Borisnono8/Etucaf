@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETUCAF - Studenti Camerunesi a Firenze</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .cameroon-gradient {
+      background: linear-gradient(
+              90deg,
+              #007A5E 33%,
+              #CE1126 33%,
+              #CE1126 66%,
+              #FCD116 66%
+      );
+      height: 5px;
+    }
+
+    .bg-pattern {
+      background-color: #fcfcfc;
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23007a5e' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-pattern">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="logo-etucaf.png"
+           alt="Logo ETUCAF"
+           class="h-14 w-auto"
+           onerror="this.src='https://via.placeholder.com/60/007A5E/FFFFFF?text=ETUCAF'">
+
+      <div class="hidden sm:block">
+        <h1 class="font-black text-xl tracking-tighter">
+          <span class="text-[#007A5E]">ETU</span>
+          <span class="text-[#CE1126]">CAF</span>
+        </h1>
+        <p class="text-[10px] uppercase font-bold text-gray-400">
+          Firenze • Toscana
+        </p>
+      </div>
+    </div>
+
+    <div class="flex space-x-6 font-bold text-sm uppercase">
+      <a href="#chi-siamo" class="hover:text-[#007A5E] transition">Chi Siamo</a>
+      <a href="#eventi" class="hover:text-[#007A5E] transition">Eventi</a>
+      <a href="#appunti" class="hover:text-[#007A5E] transition text-blue-600">Appunti</a>
+    </div>
+  </nav>
+  <div class="cameroon-gradient"></div>
+</header>
+
+<!-- ================= HERO (SENZA IMMAGINE) ================= -->
+<section class="bg-gray-900 text-white py-28">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4">
+      Benvenuti in ETUCAF
+    </h2>
+    <p class="text-xl md:text-2xl text-yellow-400 font-medium italic">
+      "L'unione fa la forza, anche lontano da casa."
+    </p>
+  </div>
+</section>
+
+<!-- ================= CHI SIAMO ================= -->
+<section id="chi-siamo" class="py-20 container mx-auto px-6">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-3xl font-black mb-6 border-l-4 border-[#007A5E] pl-4">
+        CHI SIAMO
+      </h2>
+
+      <p class="text-lg text-gray-600 leading-relaxed mb-6">
+        L’<strong>ETUCAF</strong> è il punto di riferimento per gli studenti
+        camerunesi a Firenze. Promuoviamo integrazione,
+        supporto accademico e valorizzazione culturale.
+      </p>
+
+      <div class="grid gap-4">
+        <div class="flex items-start space-x-3 bg-white p-4 rounded-lg shadow-sm">
+          <span class="text-2xl text-[#007A5E]">🎯</span>
+          <div>
+            <h4 class="font-bold text-[#007A5E]">Il nostro obiettivo</h4>
+            <p class="text-sm">
+              Supportare gli studenti nel loro percorso universitario.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-3 bg-white p-4 rounded-lg shadow-sm">
+          <span class="text-2xl text-[#CE1126]">🤝</span>
+          <div>
+            <h4 class="font-bold text-[#CE1126]">Integrazione</h4>
+            <p class="text-sm">
+              Creare ponti culturali tra Camerun e Italia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI PUOI METTERE UNA FOTO TUA SE VORRAI -->
+    <div class="bg-gray-200 h-80 rounded-3xl flex items-center justify-center text-gray-400 font-bold">
+      <img src="img.png" alt="Evento ETUCAF"
+           class="h-48 w-full object-cover">
+    </div>
+  </div>
+</section>
+
+<!-- ================= EVENTI (FOTO TUE) ================= -->
+<section id="eventi" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-black mb-12 text-center underline decoration-[#FCD116] decoration-4">
+      I NOSTRI EVENTI
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- EVENTO 1 -->
+      <div class="rounded-2xl shadow-lg border overflow-hidden">
+        <img src="evento1.png" alt="Evento ETUCAF"
+             class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-1">Festa Nazionale del Camerun</h3>
+          <p class="text-sm text-gray-600">Maggio 2025</p>
+        </div>
+      </div>
+
+      <!-- EVENTO 2 -->
+      <div class="rounded-2xl shadow-lg border overflow-hidden">
+        <img src="evento2.png" alt="Evento ETUCAF"
+             class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-1">Benvenuto Matricole</h3>
+          <p class="text-sm text-gray-600">Settembre 2025</p>
+        </div>
+      </div>
+
+      <!-- EVENTO 3 -->
+      <div class="rounded-2xl shadow-lg border overflow-hidden">
+        <img src="evento3.png" alt="Evento ETUCAF"
+             class="h-48 w-full object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-xl mb-1">Torneo della Fratellanza</h3>
+          <p class="text-sm text-gray-600">Luglio 2025</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPUNTI ================= -->
+<section id="appunti" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-black mb-6">
+      Archivio Documenti ETUCAF
+    </h2>
+
+    <p class="mb-8 text-gray-600">
+      Cartella Google Drive condivisa per appunti, moduli e documenti.
+    </p>
+
+    <a href="https://drive.google.com/drive/folders/1DFXgh2WxeoxLqNe0YyhYbBbYiXzzFOnW"
+       target="_blank"
+       class="inline-block bg-[#007A5E] text-white px-10 py-4 rounded-xl font-bold shadow-lg hover:bg-green-700 transition">
+      📂 Apri Archivio ETUCAF
+    </a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white py-12 border-t-4 border-[#FCD116]">
+  <div class="container mx-auto px-6 text-center">
+    <p class="font-bold text-lg mb-4">ETUCAF FIRENZE</p>
+    <p class="text-gray-400 text-sm mb-6">
+      info@etucaf-firenze.it | WhatsApp: +39 3519088777
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
